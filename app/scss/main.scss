@@ -1,0 +1,34 @@
+//variable
+$height-footer: 70px;
+$container:     1100px;
+
+//color var
+$white:     #ffffff;
+$grey:      #747474;
+$blue:      #2b2f5f;
+$yellow:    #fca211;
+$red1:      #d43a3d;
+$red2:      #a5161b;
+
+//fonts
+$font:      'Arial';
+
+//body
+body {
+    font-family: $font, sans-serif;
+}
+
+//settings
+@import "settings/mixin";
+@import "settings/normalize";
+@import "settings/settings";
+
+@import "fonts";
+
+//element
+@import "section/header";
+@import "section/slider";
+@import "section/description-hips";
+
+//adaptive
+@import "adaptive/media";

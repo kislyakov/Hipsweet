@@ -1,0 +1,23 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-hat_chef {
+    width: 108px;
+    height: 108px;
+    background-position: -5px -5px;
+}
+
+.sprite-heart {
+    width: 103px;
+    height: 96px;
+    background-position: -123px -5px;
+}
+
+.sprite-leaf {
+    width: 118px;
+    height: 90px;
+    background-position: -123px -111px;
+}

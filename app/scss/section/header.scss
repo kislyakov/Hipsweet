@@ -1,0 +1,211 @@
+.sprite::after {
+  background: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+
+
+.header {
+  width: 100%;
+  height: 760px;
+  background: radial-gradient($red1, $red2);
+  padding-top: 25px;
+  padding-bottom: 55px;
+}
+
+.logo {
+  width: 283px;
+  height: 66px;
+  margin-right: 100px;
+
+  @include inline-block(middle);
+
+  .logo__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.nav {
+  margin-bottom: 100px;
+}
+
+.nav__list {
+  @include inline-block(middle);
+  width: 522px;
+  height: 66px;
+  margin-right: 55px;
+
+  text-align: justify;
+  line-height: 0;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.nav__item {
+  @include inline-block(middle);
+  @include font(regular);
+  color: $white;
+  line-height:66px;
+  position: relative;
+}
+
+.dorpdown {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 115%;
+    top: 50%;
+    width: 7px;
+    height: 3px;
+    background-position: -65px -5px;
+  }
+}
+
+.nav__item:hover {
+  color: $yellow;
+}
+
+.dorpdown:hover.dorpdown::after {
+  width: 7px;
+  height: 6px;
+  margin-top: -2px;
+  background-position: -82px -5px;
+}
+
+.dorpdown__list, .frame {
+  background: $white;
+  opacity: 0.922;
+
+  border-radius: 20px;
+}
+
+.dorpdown__list {
+  position: absolute;
+  top: 75px;
+  left: -999999px;
+
+  width: 227px;
+
+  color: $grey;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 50px;
+
+  .dorpdown__item {
+    margin-bottom: 25px;
+    line-height: 1.42;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    top: -50px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 13px;
+    border: 21px solid transparent;
+    border-bottom-color: $white;
+
+
+    top: -53px;
+    left: 50%;
+    margin-left: -20px;
+  }
+}
+
+.team_dorpdown:hover {
+  .dorpdown__list {
+    left: -120%;
+  }
+}
+
+.dorpdown__item::after {
+  content: "";
+  position: absolute;
+  border: 9px solid transparent;
+  border-left-color: $white;
+  left: 0px;
+  margin-top: 2px;
+}
+
+.dorpdown__item:hover {
+  color: #000000;
+  @include font(bold);
+  &::after {
+    border-left-color: $yellow;
+  }
+}
+
+.icon {
+  font-size: 0px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;;
+  background: rgba($white, .1);
+  margin-right: 24px;
+  position: relative;
+
+  @include inline-block(middle);
+}
+
+.icon-header {
+  width: 110px;
+  height: 42px;
+  @include inline-block(middle);
+  font-size: 0px;
+}
+
+.icon-header__item {
+  &:last-child {
+    margin: 0;
+  }
+}
+
+
+.sprite_icon {
+  background: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.icon-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.icon_off {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  margin-top: -9px;
+  margin-left: -9px;
+  background-position: -96px -32px;
+}
+
+.icon_sear {
+  position: absolute;
+  margin-top: -9px;
+  margin-left: -9px;
+  width: 18px;
+  height: 17px;
+  background-position: -5px -88px;
+}
+
+

@@ -1,0 +1,256 @@
+.slider {
+  width: 100%;
+  height: 518px;
+
+  .slider__list, .slider__item {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.slider__item {
+  background: url("../img/pirog.png") no-repeat;
+  background-position: center center;
+
+  @extend %ClearFix;
+}
+
+.info {
+  width: 135px;
+  float: left;
+
+  padding-top: 60px;
+}
+
+.ingredients {
+  position: relative;
+  text-align: center;
+  color: $white;
+}
+
+
+.icon-ingredient {
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+.icon-ingredient:hover {
+  background: $yellow;
+
+  .sprite-Venechka_active {
+    width: 18px;
+    height: 18px;
+    background-position: -92px -88px;
+  }
+
+  .ingredient__list {
+    left: 90px;
+    top: -66px;
+  }
+}
+
+.sprite-Venechka {
+  width: 18px;
+  height: 18px;
+  background-position: -64px -88px;
+}
+.icon-center_ingredients {
+  margin-top: -9px;
+  margin-left: -9px;
+}
+
+.ingredients__text, .ingredients__numb {
+  @include inline-block(middle);
+  width: 49%;
+}
+
+.ingredients__numb {
+  text-align: right;
+}
+
+.ingredients__text_m {
+  width: 53%;
+}
+
+.ingredients__numb_m {
+  width: 44%;
+}
+
+
+.ingredient__list {
+  text-align: left;
+  width: 380px;
+  height: 245px;
+  background: $white;
+  color: #575757;
+  position: absolute;
+  left: 99999px;
+
+  font-size: 16px;
+
+  padding: 37px 69px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 13px;
+    border: 20px solid transparent;
+    border-bottom-color: #ffffff;
+    top: 50%;
+    margin-top: -61px;
+    left: 0%;
+    margin-left: -46px;
+    transform: rotate(-90deg);
+  }
+}
+
+.ingredients__item {
+  position: relative;
+
+  padding-bottom: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    top: 50%;
+    margin-top: -19px;
+    left: -40px;
+  }
+}
+
+
+.ingredients__item_millet::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background-position: -65px -32px;
+}
+
+.ingredients__item_eggs::after {
+  width: 22px;
+  height: 17px;
+  background-position: -99px -5px;
+}
+
+.ingredients__item_sugar::after {
+  width: 21px;
+  height: 22px;
+  background-position: -33px -88px;
+}
+
+.ingredients__item_oil::after {
+  width: 26px;
+  height: 19px;
+  background-position: -96px -59px;
+
+  left: -43px;
+}
+
+.ingredients__item_milk::after {
+  width: 18px;
+  height: 22px;
+  background-position: -5px -120px;
+}
+
+.storage {
+  margin-top: 200px;
+}
+
+.storage__text {
+  text-align: center;
+  font-size: 13px;
+  color: rgba($white, 0.28%);
+}
+
+.storage__hour {
+  font-size: 24px;
+  line-height: 40px;
+  color: $white;
+}
+
+.fonts-malina {
+  font-family: als_malinaregular;
+}
+
+.slider__img {
+  width: 436px;
+  float: left;
+  margin-left: 63px;
+}
+
+.description-slider {
+  float: right;
+  width: 408px;
+}
+
+.description-slider__title {
+  font-size: 62px;
+  color: $white;
+
+  margin-bottom: 35px;
+}
+
+.description-slider__text {
+  font-size: 15px;
+  color: $white;
+
+  margin-bottom: 30px;
+}
+
+.description-slider__bottom {
+  @extend %ClearFix;
+}
+
+.price {
+  font-size: 62px;
+  color: $white;
+  position: relative;
+
+  @include inline-block(middle);
+  width: 160px;
+  margin-right: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 37px;
+
+    top: 50%;
+    margin-top: -19px;
+    left: 120px;
+
+    background: url("../img/slider/ryb.png");
+  }
+}
+.description-slider__bottom {
+  width: 315px;
+}
+
+.description-slider__button {
+  @include inline-block(middle);
+  width: 110px;
+}
+
+.description-slider__link {
+  font-size: 14px;
+  font-weight: bold;
+  color: #a4151c;
+
+  display: block;
+  border-radius: 30px;
+  text-align: center;
+
+  padding: 10px 20px;
+
+  background: $yellow;
+
+  &:hover {
+    color: $yellow;
+    background: #641a00;
+  }
+}

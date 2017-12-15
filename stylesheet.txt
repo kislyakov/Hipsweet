@@ -1,0 +1,124 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+.sprite-Arrow {
+    width: 50px;
+    height: 51px;
+    background-position: -5px -5px;
+}
+
+
+.sprite-Arrow_bottom {
+    width: 7px;
+    height: 3px;
+    background-position: -65px -5px;
+}
+
+
+.sprite-Arrow_bottom__hover {
+    width: 7px;
+    height: 6px;
+    background-position: -82px -5px;
+}
+
+
+.sprite-Eggs {
+    width: 22px;
+    height: 17px;
+    background-position: -99px -5px;
+}
+
+
+.sprite-Millet {
+    width: 21px;
+    height: 21px;
+    background-position: -65px -32px;
+}
+
+
+.sprite-Office {
+    width: 17px;
+    height: 17px;
+    background-position: -96px -32px;
+}
+
+
+.sprite-Oil {
+    width: 26px;
+    height: 19px;
+    background-position: -96px -59px;
+}
+
+
+.sprite-Search {
+    width: 18px;
+    height: 17px;
+    background-position: -5px -88px;
+}
+
+
+.sprite-Sugar {
+    width: 21px;
+    height: 22px;
+    background-position: -33px -88px;
+}
+
+
+.sprite-Venechka {
+    width: 18px;
+    height: 18px;
+    background-position: -64px -88px;
+}
+
+
+.sprite-Venechka_active {
+    width: 18px;
+    height: 18px;
+    background-position: -92px -88px;
+}
+
+
+.sprite-facebook {
+    width: 11px;
+    height: 22px;
+    background-position: -131px -5px;
+}
+
+
+.sprite-instagram {
+    width: 22px;
+    height: 22px;
+    background-position: -120px -88px;
+}
+
+
+.sprite-milk {
+    width: 18px;
+    height: 22px;
+    background-position: -5px -120px;
+}
+
+
+.sprite-ok {
+    width: 13px;
+    height: 22px;
+    background-position: -33px -120px;
+}
+
+
+.sprite-twitter {
+    width: 22px;
+    height: 18px;
+    background-position: -56px -120px;
+}
+
+
+.sprite-vkontakte {
+    width: 22px;
+    height: 13px;
+    background-position: -88px -120px;
+}

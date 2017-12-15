@@ -1,0 +1,91 @@
+.description-hips {
+  width: 100%;
+  height: 760px;
+  background: #c8c8c8;
+  padding-top: 115px;
+
+  @extend %ClearFix;
+}
+
+.description-hips__container {
+  position: relative;
+  height: 100%;
+}
+
+.description-hips__left {
+  float: left;
+  margin-right: 53px;
+  margin-top: -17px;
+}
+
+.description-hips__right {
+  float: right;
+}
+
+.description-hips__title {
+  width: 410px;
+  font-size: 62px;
+  color: $blue;
+
+  margin-bottom: 35px;
+}
+
+.description-hips__text {
+  width: 410px;
+  font-size: 15px;
+  color: $grey;
+
+  margin-bottom: 75px;
+}
+
+.sprite-hips {
+  background-image: url(../img/description-hips/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+
+  margin-bottom: 20px;
+}
+
+.description-hips__item {
+  position: relative;
+  font-size: 16px;
+  height: 159px;
+  width: 145px;
+  color: $grey;
+  margin-right: 40px;
+
+  @include inline-block(middle);
+}
+
+.sprite-hat_chef {
+  width: 108px;
+  height: 108px;
+  background-position: -5px -5px;
+}
+
+.sprite-heart {
+  width: 103px;
+  height: 96px;
+  background-position: -123px -5px;
+  margin-bottom: 35px;
+}
+
+.sprite-leaf {
+  width: 118px;
+  height: 90px;
+  background-position: -123px -111px;
+  margin-bottom: 35px;
+}
+
+.description-hips__img-povar {
+  position: absolute;
+  width: 383px;
+  height: 708px;
+  bottom: 0;
+  right: 100px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
